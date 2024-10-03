@@ -1,8 +1,11 @@
 // Instructions: Use lodash's groupBy function to group the numbers by odd and even.
 
-const _ = require('lodash');
+const _ = require("lodash");
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+const groupedNumbers = _.groupBy(numbers, (num) =>
+  num % 2 === 0 ? "odd" : "even"
+);
 
 // your code here
 
